@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS MCQ</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        <h3 class="heading start__heading">Let's begin the quiz... 😎</h3>
+        <button class="start__btn">Start!</button>
+      </div>
+      <div class="quiz close">
+        <div class="quiz__head">
+          <div class="quiz__header">
+            <div class="quiz__title">Programming Language</div>
+            <a href="#" class="quiz__exit"><span class="quiz__line"></span></a>
+          </div>
+          <div class="quiz__stats-container">
+            <div class="quiz__stats">
+              <!--  <span class="quiz__stats-track">1</span>
+            <span class="quiz__stats-track">1</span> -->
+            </div>
+            <div class="quiz__stats-progress"></div>
+          </div>
+        </div>
+        <div class="quiz__body">
+          <ul style="display: none" class="quiz__questions-list"></ul>
+          <!-- <div class="quiz__questions">
+            <h4>Why we should use NodeJs?</h4>
+          </div>
+          <ul class="quiz__questions-list">
+            <li data-correct="a" class="quiz__questions-list-item">
+              Fast and Scalble
+            </li>
+            <li class="quiz__questions-list-item">Easy to write code</li>
+            <li class="quiz__questions-list-item">
+              Using JavaScript for the backend
+            </li>
+            <li class="quiz__questions-list-item">Single Threaded language</li>
+          </ul>
+
+          <button class="quiz__next-btn quiz__next-btn--checked">Next</button> -->
+        </div>
+        <div class="quiz__bottom">
+          <button data-curquestion="0" class="quiz__next-btn">Next</button>
+        </div>
+      </div>
+      <div class="end close">
+        <h3 class="heading end__heading">You've finished the quiz</h3>
+        <button class="end__btn">See the result!</button>
+      </div>
+
+      <div class="results close">
+        <p class="results__summary">Thanks for facing all the questions..💪</p>
+        <h3 class="heading results__heading">Your score is 100</h3>
+        <button class="results__again-btn">Try again!</button>
+      </div>
+
+      <div class="quit close">
+        <p class="quit__summary">You didn't face all the questions..😥</p>
+        <h3 class="heading quit__heading">Your score is 100</h3>
+        <button class="quit__again-btn">Try again!</button>
+      </div>
+
+      <div class="error close">
+        <p class="error__summary">You didn't select any question..😂</p>
+        <h3 class="heading error__heading">Try to face all the questions</h3>
+        <button class="error__back-btn">Back to quiz!</button>
+      </div>
+
+      <div class="overlay">
+        <div class="overlay__btn-container">
+          <button class="btn overlay__quit-btn">Quit the quiz</button>
+          <button class="btn overlay__start-btn">Try again!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
